@@ -1,0 +1,130 @@
+@font-face {
+    font-family: titulo;
+    src: url(fontes/BATMAN.TTF);
+}
+@font-face {
+    font-family: subtitulo;
+    src: url(fontes/Cocogoose\ Pro\ Semilight-trial.ttf);
+}
+@font-face {
+    font-family: texto;
+    src: url(fontes/MADEINFINITY-Regular.otf);
+}
+@font-face {
+    font-family: texto negrito;
+    src: url(fontes/MADEINFINITY-Black.otf);
+}
+@keyframes heart-beat{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+h1 {
+    font-family: titulo;
+    color: DodgerBlue;
+    font-size: 50px;
+    animation: heart-beat 1.3s infinite;
+}
+
+h2 {
+    font-family: subtitulo;
+    color: LightSkyBlue;
+}
+
+body {
+    font-family: texto;
+    color: whitesmoke;
+    text-align: center;
+    background-color: #1C1C1C;
+    background-image: none;
+    cursor: crosshair;
+}
+
+a{
+    font-family: texto negrito;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: DodgerBlue;
+    display: inline-block;
+    text-decoration: none;
+}
+
+strong {
+    font-family: texto negrito;
+    color: DodgerBlue;
+}
+
+a:hover {
+    color: LightSkyBlue;
+}
+
+p {
+    padding: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    border-color: LightSkyBlue;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+img, video {
+    border-color: LightSkyBlue;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 3px LightSlateGray;
+}
+
+ol, ul{
+    padding: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    border-color: LightSkyBlue;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+ul.barra{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e2e;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+li a.barra{
+    color: whitesmoke;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: black;
+    margin: auto;
+}
+  
+li a:hover.barra {
+    background-color: rgb(39, 39, 39);
+}
+
+li.barra{
+    flex-flow: row;
+}
+
+.active {
+    color: whitesmoke;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #4CAF50
+}
