@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>Galeria de fotos</title>
         <style>
             img, video{
-                width: 275px;
-                height: 275px;
-                margin: 20px;
+                width: 16vw;
+                height: 32vh;
+                margin: 2%;
                 object-fit: cover;
                 background-color: #FFF7ED;
                 border-color: #3C2A1E;
@@ -23,6 +23,10 @@
         </style>
     </head>
     <body id="inicio">
+
+        <div class="nav">
+            <h1 id="nav">Blog</h1>
+        </div>
 
         <ul class="barra">
             <li><a class="barra" href="index.html">Início</a></li>
@@ -105,8 +109,10 @@
             <img src="imagem/60.jpeg" alt="foto60">
             <img src="imagem/61.jpeg" alt="foto61">
             <img src="imagem/62.jpeg" alt="foto62">
-        </p><br>
-        Clique <a href="#inicio">aqui</a> para retornar ao início.</br>
+        </p>
+        <div class="divVoltar">
+            Clique <a href="#inicio">aqui</a> para retornar ao início.</br>
         <small><font color="gray">Todos os direitos reservados a Elisa Cristo @2023.</font></small><br><br>
+        </div>
     </body>
 </html>
