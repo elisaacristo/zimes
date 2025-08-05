@@ -14,7 +14,10 @@
     font-family: texto negrito;
     src: url(fontes/Inter_24pt-Bold.ttf);
 }
-
+@font-face {
+    font-family: texto italico;
+    src: url(fontes/Inter_24pt-Italic.ttf);
+}
 
 h1 {
     font-family: titulo;
@@ -25,6 +28,16 @@ h1 {
 h2 {
     font-family: subtitulo;
     color: #3C2A1E;
+}
+
+strong {
+    font-family: texto negrito;
+    color: #3C2A1E;
+}
+
+i {
+    font-family: texto italico;
+    color: #533f31;
 }
 
 body {
@@ -43,11 +56,6 @@ a{
     background-color: #FFF7ED;
     display: inline-block;
     text-decoration: none;
-}
-
-strong {
-    font-family: texto negrito;
-    color: #3C2A1E;
 }
 
 a:hover {
