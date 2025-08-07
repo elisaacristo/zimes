@@ -1,52 +1,52 @@
-@font-face {
+@font-face{
     font-family: titulo;
     src: url(fontes/Merriweather_96pt-Regular.ttf);
 }
-@font-face {
+@font-face{
     font-family: subtitulo;
     src: url(fontes/Merriweather_48pt-Light.ttf);
 }
-@font-face {
+@font-face{
     font-family: texto;
     src: url(fontes/Inter_24pt-Regular.ttf);
 }
-@font-face {
+@font-face{
     font-family: texto negrito;
     src: url(fontes/Inter_24pt-Bold.ttf);
 }
-@font-face {
+@font-face{
     font-family: texto italico;
     src: url(fontes/Inter_24pt-Italic.ttf);
 }
 
-h1 {
-    font-family: titulo;
-    color: #3C2A1E;
-    font-size: 250%;
-}
-
-h2 {
-    font-family: subtitulo;
-    color: #3C2A1E;
-}
-
-strong {
-    font-family: texto negrito;
-    color: #3C2A1E;
-}
-
-i {
-    font-family: texto italico;
-    color: #533f31;
-}
-
-body {
+body{
     font-family: texto;
     color: #3C2A1E;
     text-align: center;
     background-color: #FFF7ED;
     margin: 0;
     padding: 0;
+}
+
+h1{
+    font-family: titulo;
+    color: #3C2A1E;
+    font-size: 250%;
+}
+
+h2{
+    font-family: subtitulo;
+    color: #3C2A1E;
+}
+
+strong{
+    font-family: texto negrito;
+    color: #3C2A1E;
+}
+
+i{
+    font-family: texto italico;
+    color: #533f31;
 }
 
 a{
@@ -58,11 +58,11 @@ a{
     text-decoration: none;
 }
 
-a:hover {
+a:hover{
     color: #CF6679;
 }
 
-p {
+p{
     padding: 3%;
     margin-left: 7%;
     margin-right: 7%;
@@ -73,7 +73,7 @@ p {
     border-radius: 15px;
 }
 
-img, video {
+img, video{
     border-color: #3C2A1E;
     border-style: solid;
     border-width: 2px;
@@ -107,8 +107,8 @@ ul.barra{
 
 li a.barra{
     color: #3C2A1E;
-    width: 7vw;
-    height: 5vh;
+    width: 9vw;
+    height: 7vh;
     text-decoration: none;
     background-color: #FFF7ED;
     display: flex;
@@ -116,25 +116,25 @@ li a.barra{
     justify-content: center;
 }
   
-li a:hover.barra {
+li a:hover.barra{
     background-color: #CF6679;
 }
 
 li.barra{
     flex-flow: row;
-    width: 7vw;
-    height: 5vh;
+    width: 9vw;
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.active {
+.active{
     color: #3C2A1E;
     text-decoration: none;
-    background-color: #FFF7ED;
-    width: 7vw;
-    height: 5vh;
+    background-color: #fff7ed00;
+    width: 9vw;
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,8 +151,14 @@ li.barra{
     color: #FFF7ED;
 }
 
-.divVoltar{
+.retornar{
     background-color: #FFF7ED;
-    width: 20%;
+    width: 30%;
     margin: auto;
+}
+
+hr{
+    background-color: #3C2A1E;
+    height: 0.25vh;
+    margin: 0 7% 0 7%;
 }
