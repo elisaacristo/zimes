@@ -51,7 +51,7 @@ i{
 
 a{
     font-family: texto negrito;
-    padding: 4% 1% 4% 1%;
+    padding: 1%;
     color: #3C2A1E;
     background-color: #FFF7ED;
     display: inline-block;
@@ -103,6 +103,7 @@ ul.barra{
     align-items: center;
     justify-content: center;
     border-radius: 0;
+    word-wrap: break-word;
 }
 
 li a.barra{
@@ -155,6 +156,7 @@ li.barra{
     background-color: #FFF7ED;
     width: 30%;
     margin: auto;
+    margin-top: 1%;
 }
 
 hr{
