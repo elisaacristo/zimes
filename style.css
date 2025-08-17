@@ -160,7 +160,38 @@ li.barra{
 }
 
 hr{
-    background-color: #3C2A1E;
+    background-color: #3c2a1e8a;
     height: 0.25vh;
     margin: 0 7% 0 7%;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#modal span {
+    position: absolute;
+    top: 20px; right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#modal-content img, #modal-content video {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }

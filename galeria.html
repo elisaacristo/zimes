@@ -5,20 +5,24 @@
         <link rel="stylesheet" href="style.css">
         <title>Galeria</title>
         <style>
-            img, video{
-                width: 16vw;
+            img, video {
+                width: 32vh;
                 height: 32vh;
                 margin: 2%;
                 object-fit: cover;
                 background-color: #FFF7ED;
                 border-color: #3C2A1E;
-                filter: grayscale(100%);
+                cursor: pointer;
             }
-            img:hover{
-                filter: grayscale(0%);
-            }
-            video:hover{
-                filter: grayscale(0%);
+            div.galeria {
+                padding: 3%;
+                margin-left: 7%;
+                margin-right: 7%;
+                margin-top: 1%;
+                border-color: none;
+                border-style: none;
+                border-width: 0;
+                border-radius: 0;
             }
         </style>
     </head>
@@ -39,7 +43,7 @@
 
         <h1>Um pouco sobre mim (em fotos)</h1>
 
-        <p>
+        <div class="galeria">
             <img src="imagem/1.jpeg" alt="foto1">
             <img src="imagem/2.jpeg" alt="foto2">
             <img src="imagem/3.jpeg" alt="foto3">
@@ -110,10 +114,19 @@
             <img src="imagem/60.jpeg" alt="foto60">
             <img src="imagem/61.jpeg" alt="foto61">
             <img src="imagem/62.jpeg" alt="foto62">
-        </p>
+        </div>
+
         <div class="retornar">
             Clique <a href="#inicio">aqui</a> para retornar ao início.</br>
         <small><font color="gray">Todos os direitos reservados a Elisa Cristo @2025.</font></small><br><br>
         </div>
+
+        <div id="modal">
+            <span onclick="fecharModal()">&times;</span>
+            <div id="modal-content">
+            </div>
+        </div>
+
+        <script id="clique_foto_video" src="script.js"></script>
     </body>
 </html>
