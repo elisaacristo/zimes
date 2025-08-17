@@ -21,7 +21,7 @@
             }
             td{
                 width: 50%;
-                
+                text-align: center;
             }
             p.post{
                 text-align: justify;
@@ -37,21 +37,23 @@
             p.post_img{
                 text-align: center;
                 padding: 2%;
+                border: none;
                 margin: auto;
-                border-color: none;
-                border-style: none;
-                border-width: 0;
-                border-radius: 0;
             }
-            img, video {
+            p.post_img strong, p.post_img a {
+                display: inline-block;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            img {
                 border-color: #3C2A1E;
                 border-style: solid;
                 border-width: 2px;
                 border-radius: 0;
-                height: 25%;
-                width: 25%;
                 margin: 1%;
                 box-shadow: none;
+                width: 14vw;
             }
             hr{
                 margin: 0 4.5% 0 4.5%;
@@ -64,6 +66,35 @@
             a.post:hover {
                 color: #CF6679;
             }
+
+            @media (max-width: 550px) {
+                table {
+                    display: block;
+                    width: 100%;
+                }
+                tr {
+                    display: block;
+                    width: 100%;
+                }
+                td {
+                    display: block;
+                    width: 100% !important;
+                }
+                img {
+                    width: 30vw;
+                }
+                p.post_img {
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                p.post_img strong, p.post_img a {
+                    display: inline-block;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
         </style>
     </head>
     <body id="inicio">
@@ -72,7 +103,9 @@
             <h1 class="nav">zimes.dev</h1>
         </div>
 
-        <ul class="barra">
+        <button id="menu-toggle" class="menu-button">≡</button>
+
+        <ul id="menu" class="barra">
             <li><a class="barra" href="index.html">Início</a></li>
             <li><a class="active" href="projetos.html">Projetos</a></li>
             <li><a class="barra" href="publicacoes.html">Publicações</a></li>
@@ -122,7 +155,7 @@
                 <td>
                     <br>
                     <a class="post" target="_blank" href="https://www.instagram.com/p/C7kliggp5G7/">
-                        <img src="imagem/projetos/projeto_gremio1.jpg" alt="1° SEZL" style="width: 15vw;">
+                        <img src="imagem/projetos/projeto_gremio1.jpg" alt="1° SEZL">
                     </a>
                     <br>
                     <p class="post_img">
@@ -133,7 +166,7 @@
                     </p>
                     <br>
                     <a class="post" target="_blank" href="https://www.instagram.com/reel/C0XTCdxpUKh/">
-                        <img src="imagem/projetos/projeto_gremio2.jpg" alt="ENET" style="width: 15vw;">
+                        <img src="imagem/projetos/projeto_gremio2.jpg" alt="ENET">
                     </a>
                     <br>
                     <p class="post_img">
@@ -174,7 +207,7 @@
                 <td>
                     <br>
                     <a class="post" target="_blank" href="https://drive.google.com/file/d/1Pj8d8-ZsMQqe0PcvNLhmQDlqaUED9qnR/view?usp=drive_link&usp=embed_facebook">
-                        <img src="imagem/projetos/projeto_labtsp31.png" alt="Certificado" style="width: 17vw;">
+                        <img src="imagem/projetos/projeto_labtsp31.png" alt="Certificado">
                     </a>
                     <p class="post_img">
                         <strong>
@@ -184,7 +217,7 @@
                         </strong>
                     </p>
                     <br>
-                    <img src="imagem/projetos/projetos_labtsp32.jpeg" alt="EMEF ACAS" style="width: 17vw;">
+                    <img src="imagem/projetos/projetos_labtsp32.jpeg" alt="EMEF ACAS">
                     <br>
                     <p class="post_img">
                         <strong>Colaboração com a escola EMEF Antonio Carlos de Andrada e Silva</strong>
@@ -216,7 +249,7 @@
                 <td>
                     <br>
                     <a class="post" target="_blank" href="https://drive.google.com/file/d/1xG1WzUJgqgkmU4nGfavoVTMGdz3rMlj2/view?usp=sharing&usp=embed_facebook">
-                        <img src="imagem/projetos/projeto_petmatch.png" alt="Apresentação" style="width: 15vw;">
+                        <img src="imagem/projetos/projeto_petmatch.png" alt="Apresentação">
                     </a>
                     <br>
                     <p class="post_img">
@@ -266,7 +299,7 @@
                 <td>
                     <br>
                     <a class="post" target="_blank" href="https://drive.google.com/file/d/1JliNmhUOXBnX5cFXFiwmwZVdc7r7MiDr/view?usp=drive_link&usp=embed_facebook">
-                        <img src="imagem/projetos/projeto_labtsp21.png" alt="Certificado" style="width: 15vw;">
+                        <img src="imagem/projetos/projeto_labtsp21.png" alt="Certificado">
                     </a>
                     <br>
                     <p class="post_img">
@@ -277,7 +310,7 @@
                         </strong>
                     </p>
                     <br>
-                    <img src="imagem/projetos/projeto_labtsp22.jpeg" alt="FECIVALE 2023" style="height: 16vw;">
+                    <img src="imagem/projetos/projeto_labtsp22.jpeg" alt="FECIVALE 2023">
                     <br>
                     <p class="post_img">
                         <strong>Estande de apresentação no FECIVALE 2023, na cidade de Registro, SP</strong>
@@ -306,7 +339,7 @@
                 <td>
                     <br>
                     <a class="post" target="_blank" href="https://drive.google.com/file/d/1YbmISjmZqN8OVgU8hGQRAwb70Lx48Rm-/view?usp=sharing&usp=embed_facebook">
-                        <img src="imagem/projetos/projeto_labts1.png" alt="MOCCIF 2022" style="width: 15vw;">
+                        <img src="imagem/projetos/projeto_labts1.png" alt="MOCCIF 2022">
                     </a>
                     <br>
                     <p class="post_img">
@@ -317,7 +350,7 @@
                         </strong>
                     </p>
                     <br>
-                    <img src="imagem/projetos/projeto_labts2.jpeg" alt="Registro" style="width: 15vw;">
+                    <img src="imagem/projetos/projeto_labts2.jpeg" alt="Registro">
                     <br>
                     <p class="post_img">
                         <strong>Momento em que se realizou o primeiro encontro para a construção de hortas verticais</strong>
@@ -364,5 +397,7 @@
             Clique <a href="#inicio">aqui</a> para retornar ao início.</br>
             <small><font color="gray">Todos os direitos reservados a Elisa Cristo @2025.</font></small><br><br>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>

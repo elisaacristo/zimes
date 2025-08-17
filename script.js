@@ -1,3 +1,7 @@
+// =====================
+// ABRIR IMAGENS (modal)
+// =====================
+
 document.addEventListener("DOMContentLoaded", () => {
   const imagensVideos = document.querySelectorAll("img:not(.ufabc_logo), video");
   const modal = document.getElementById("modal");
@@ -43,4 +47,19 @@ document.addEventListener("DOMContentLoaded", () => {
       fecharModal();
     }
   });
+});
+
+
+// =====================
+// MENU RESPONSIVO (mobile)
+// =====================
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    if (toggleButton && menu) {
+        toggleButton.addEventListener("click", function () {
+            menu.classList.toggle("show");
+        });
+    }
 });

@@ -100,46 +100,82 @@ ul.barra{
     border-style: solid;
     border-color: #3C2A1E;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     border-radius: 0;
     word-wrap: break-word;
 }
 
-li a.barra{
+li.barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: auto;
+    height: auto;
+}
+
+li a.barra, .active {
     color: #3C2A1E;
-    width: 9vw;
-    height: 7vh;
     text-decoration: none;
     background-color: #FFF7ED;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
+    padding: 25px 40px 25px 40px;
+    box-sizing: border-box;
 }
-  
+
 li a:hover.barra{
     background-color: #CF6679;
 }
 
-li.barra{
-    flex-flow: row;
-    width: 9vw;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*
+// =====================
+// MENU RESPONSIVO (mobile)
+// =====================
+*/
+
+.menu-button {
+    display: none; /* Oculto por padrão */
+    background: #FFF7ED;
+    border: 2px solid #3C2A1E;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px auto;
 }
 
-.active{
-    color: #3C2A1E;
-    text-decoration: none;
-    background-color: #fff7ed00;
-    width: 9vw;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media (max-width: 550px) {
+    ul.barra {
+        display: none; /* Oculta o menu inicialmente */
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0 10px;
+    }
+
+    ul.barra.show {
+        display: flex; /* Mostra o menu quando a classe "show" for adicionada */
+    }
+
+    .menu-button {
+        display: block; /* Mostra o botão de três pontinhos */
+    }
+
+    li a.barra, .active {
+        width: 100%;
+        text-align: center;
+    }
 }
+
+/*
+// =====================
+// MENU RESPONSIVO (mobile)
+// =====================
+*/
 
 .nav{
     width: 100%;
@@ -164,6 +200,12 @@ hr{
     height: 0.25vh;
     margin: 0 7% 0 7%;
 }
+
+/*
+// =====================
+// ABRIR IMAGENS (modal)
+// =====================
+*/
 
 #modal {
     display: none;
@@ -195,3 +237,9 @@ hr{
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
+
+/*
+// =====================
+// ABRIR IMAGENS (modal)
+// =====================
+*/

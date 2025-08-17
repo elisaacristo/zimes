@@ -11,17 +11,21 @@
             table{
                 width: 95%;
                 margin: auto;
+                background-color: #FFF7ED;
+                border: none;
+                /*
                 border-style: solid;
                 border-radius: 15px;
                 border-color: #3C2A1E;
                 border-width: 2px;
-                background-color: #FFF7ED;
+                */
             }
             td{
                 width: 50%;
             }
             .circle{
                 border-radius: 50%;
+                box-shadow: none;
             }
             .clique{
                 padding: 2%;
@@ -44,12 +48,9 @@
             }
             p#ficha{
                 width: 100%;
-                border-color: none;
-                border-style: none;
-                border-width: none;
-                border-radius: none;
+                border: none;
                 text-align: center;
-                margin: auto;
+                margin: 0 200px 0 0;
             }
             td.atualizacoes{
                 display: flex;
@@ -75,6 +76,24 @@
             a.linksAtualiza:hover {
                 color: #CF6679;
             }
+            @media (max-width: 550px) {
+                table {
+                    display: block;
+                    width: 100%;
+                }
+                tr {
+                    display: block;
+                    width: 100%;
+                }
+                td {
+                    display: block;
+                    width: 100% !important;
+                }
+                img.circle {
+                    width: 70vw;
+                    height: auto;
+                }
+            }
         </style>
     </head>
     <body id="inicio">
@@ -83,7 +102,9 @@
             <h1 class="nav">zimes.dev</h1>
         </div>
 
-        <ul class="barra">
+        <button id="menu-toggle" class="menu-button">≡</button>
+
+        <ul class="barra" id="menu">
             <li><a class="active" href="index.html">Início</a></li>
             <li><a class="barra" href="projetos.html">Projetos</a></li>
             <li><a class="barra" href="publicacoes.html">Publicações</a></li>
@@ -98,6 +119,7 @@
             <tr>
                 <td>
                     <h2>Elisa Araujo Cristo</h2>
+                    <br>
                     <img class="circle" src="imagem/index/elisa.jpeg" width="350vw" height="350vh"
                     alt="Elisa" title="Foto da Elisa"/>
                     <p id="ficha">                        
@@ -212,5 +234,7 @@
             Clique <a href="#inicio">aqui</a> para retornar ao início.</br>
             <small><font color="gray">Todos os direitos reservados a Elisa Cristo @2025.</font></small><br><br>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
