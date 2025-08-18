@@ -146,7 +146,7 @@ li a:hover.barra{
     font-size: 24px;
     cursor: pointer;
     border-radius: 5px;
-    margin: 10px auto;
+    margin: 10px;
 }
 
 @media (max-width: 550px) {
